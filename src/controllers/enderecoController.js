@@ -74,7 +74,7 @@ module.exports = {
                 }
             });
 
-            return res.tatus(200).json({message: 'Endereço atualizado com sucesso!'})
+            return res.status(200).json({message: 'Endereço atualizado com sucesso!'})
         } catch (error) {
             res.status(500).json({message: `${error.message} falha ao atualizar endereço`})
         }
